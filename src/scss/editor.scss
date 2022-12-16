@@ -1,0 +1,104 @@
+@import "./components/accordion.scss";
+
+.interface-interface-skeleton__content {
+    overflow-y: scroll;
+}
+
+.block-body {
+    padding: 0 1rem 1rem;
+    background-color: #fafafa;
+}
+
+.category-title {
+    color: #888;
+}
+
+.block-title {
+    margin: 0;
+    display: flex;
+    span {
+        margin: auto 0 auto 10px;
+    }
+}
+
+.accordion-button {
+    
+    font-size: 20px;
+
+    .block-icon {
+        display: block;
+        color: inherit !important;
+    }
+    
+    small {
+        display: block !important;
+        // width: 100%;
+        font-size: 14px;
+        font-weight: 400;
+        color: #333;
+    }
+}
+
+.accordion-header {
+    margin: 0 !important;
+}
+
+.hr-title {
+    margin-top: 0px !important;
+    margin-bottom: 5px !important;
+}
+
+hr {
+    margin-top: 0;
+}
+
+.components-base-control {
+    margin: 10px 0;
+}
+
+.components-base-control__help {
+    margin: 0;
+}
+
+.components-base-control__label, .components-base-control label {
+    margin-bottom: 0;
+}
+
+.components-base-control__field {
+    margin-bottom: 0;
+}
+
+.components-text-control__input, .block-editor-url-input__input {
+    padding: 6px 8px;
+    display: block;
+    border: solid 1px #ccc !important;
+    border-radius: 3px !important;
+}
+
+.components-input-control__container {
+    padding: 2px;
+    display: block;
+}
+
+.components-input-control__backdrop { 
+    border: solid 1px #ccc !important;
+    border-radius: 3px !important;
+}
+
+.accordion .block-editor-rich-text__editable {
+    // margin: 0.5rem 0 !important;
+    background: white;
+    border: solid 1px #ccc !important;
+    border-radius: 3px !important;
+    padding: 6px 8px;
+}
+
+.block-editor-inner-blocks {
+    > .rich-text {
+        border: none !important;
+    }
+}
+
+.select-image-btn {
+    margin-right: 10px;
+}

@@ -1,0 +1,26 @@
+{
+    "slug": "carousel",
+    "title": "Carrossel CTA",
+    "desc": "Carrossel de CTAs",
+    "icon": " bi-card-heading",
+    "categ": "luxblock",
+    "usesInner": true,  
+    "attrs": {
+    },
+    "edit": [
+        {
+            "tag": "title",
+            "title": "CTAs"        
+        },
+        {
+            "tag": "input",
+            "type": "inner",
+            "blocks": [ "luxblock/cta" ]
+        }
+    ],
+    "children": [
+        {
+            "path": "cta/"
+        }
+    ]
+}

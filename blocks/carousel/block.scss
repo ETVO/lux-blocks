@@ -1,0 +1,73 @@
+@import "./cta/block.scss";
+
+$control-icon-size: 1.5rem;
+
+.lux-carousel {
+    .carousel {
+
+        .carousel-control {
+
+            &-prev {
+                &:hover,
+                &:focus,
+                &:active {
+                    background: linear-gradient(-90deg, rgba(#000, 0), rgba(#000, .1));
+                }
+            }
+
+            &-next {
+
+                &:hover,
+                &:focus,
+                &:active {
+                    background: linear-gradient(90deg, rgba(#000, 0), rgba(#000, .1));
+                }
+            }
+
+            &-prev,
+            &-next {
+
+                .carousel-control-next-icon,
+                .carousel-control-prev-icon {
+                    margin: auto;
+
+                    width: unset;
+                    height: unset;
+
+                    font-size: $control-icon-size;
+
+                    color: #494949 !important;
+                    font-family: bootstrap-icons;
+                    font-weight: bolder;
+
+                    background-image: none;
+
+                    display: flex;
+
+                    transition: font-size 0.3s;
+                }
+
+                &:hover,
+                &:focus,
+                &:active {
+                    opacity: 1;
+
+                    .carousel-control-next-icon,
+                    .carousel-control-prev-icon {
+                        font-size: calc($control-icon-size * 1.25);
+                    }
+                }
+
+                .carousel-control-prev-icon::before {
+                    content: "\f284";
+                    margin: auto;
+                }
+
+                .carousel-control-next-icon::before {
+                    content: "\f285";
+                    margin: auto;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,84 @@
+{
+    "slug": "luximage",
+    "title": "Imagem",
+    "desc": "Título, subtítulo, imagem, e botão",
+    "icon": " bi-image-fill",
+    "categ": "luxblock",
+    "attrs": {
+        "image": {
+            "type": "boolean"
+        },
+        "showDesktop": {
+            "type": "string"
+        },
+        "showTablet": {
+            "type": "string"
+        },
+        "showMobile": {
+            "type": "string"
+        },
+        "title": {
+            "type": "string"
+        },
+        "subtitle": {
+            "type": "string"
+        },
+        "btnLink": {
+            "type": "string"
+        },
+        "btnText": {
+            "type": "string"
+        }
+    },
+    "edit": [
+        {
+            "tag": "title",
+            "title": "Imagem"        
+        },
+        {
+            "tag": "input",
+            "type": "image",
+            "attr": "image",
+            "label": "Imagem"        
+        },
+        {
+            "tag": "title",
+            "title": "Botão"        
+        },
+        {
+            "tag": "input",
+            "type": "rich",
+            "attr": "btnText",
+            "label": "Texto do botão"
+        },
+        {
+            "tag": "input",
+            "type": "url",
+            "attr": "btnLink",
+            "label": "Link do botão"
+        },
+        {
+            "tag": "title",
+            "title": "Opções"        
+        },
+        {
+            "tag": "input",
+            "type": "check",
+            "attr": "showDesktop",
+            "label": "Exibir no Desktop",
+            "checked": "checked"
+        },
+        {
+            "tag": "input",
+            "type": "check",
+            "attr": "showTablet",
+            "label": "Exibir no Tablet"
+        },
+        {
+            "tag": "input",
+            "type": "check",
+            "attr": "showMobile",
+            "label": "Exibir no Mobile"
+        }
+    ]
+}

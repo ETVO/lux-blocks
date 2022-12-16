@@ -1,0 +1,12 @@
+{
+    "category": "Lux Blocks",
+    "startCollapsed": true,
+    "blocks": [
+        {
+            "path": "./carousel/"
+        },
+        {
+            "path": "./luximage/"
+        }
+    ]
+}

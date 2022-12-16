@@ -1,0 +1,59 @@
+.lux-luximage {
+    padding: 6rem 0;
+
+    .title {
+        text-align: center;
+        margin-bottom: 1rem;
+
+        h2 {
+            font-weight: 700;
+            margin-bottom: 0;
+        }
+
+        span.subtitle {
+            font-weight: 600;
+            font-size: calc(1.5rem + 0.9vw);
+        }
+    }
+
+    .wrap {
+        .image {
+            img {
+                margin: auto;
+                max-width: 100%;
+                display: block;
+            }
+        }
+    }
+
+    .action {
+        text-align: center;
+        margin-top: 1.5rem;
+        font-size: 1.1rem;
+    }
+
+}
+
+@media all and (max-width: 1200px) {
+    .lux-luximage {
+        .wrap {
+            .image {
+                img {
+                    width: 495px;
+                }
+            }
+        }
+    }
+}
+
+@media all and (max-width: 576px) {
+    .lux-luximage {
+        .wrap {
+            .image {
+                img {
+                    width: 380px;
+                }
+            }
+        }
+    }
+}

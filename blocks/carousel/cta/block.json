@@ -1,0 +1,69 @@
+{
+    "slug": "cta",
+    "title": "CTA",
+    "desc": "Imagem, título, texto e botão",
+    "icon": " bi-card-heading",
+    "categ": "luxblock",
+    "parent": ["luxblock/ctacarousel"],
+    "attrs": {
+        "image": {
+            "type": "string"
+        },
+        "title": {
+            "type": "string"
+        },
+        "text": {
+            "type": "string"
+        },
+        "btnText": {
+            "type": "string"
+        },
+        "btnLink": {
+            "type": "string"
+        }
+    },
+    "edit": [
+        {
+            "tag": "title",
+            "title": "Imagem"        
+        },
+        {
+            "tag": "input",
+            "type": "image",
+            "attr": "image",
+            "label": "Imagem"        
+        },
+        {
+            "tag": "title",
+            "title": "Conteúdo"        
+        },
+        {
+            "tag": "input",
+            "type": "text",
+            "attr": "title",
+            "label": "Título"        
+        },
+        {
+            "tag": "input",
+            "type": "rich",
+            "attr": "text",
+            "label": "Texto"        
+        },
+        {
+            "tag": "title",
+            "title": "Botão"        
+        },
+        {
+            "tag": "input",
+            "type": "text",
+            "attr": "btnText",
+            "label": "Texto do Botão"        
+        },
+        {
+            "tag": "input",
+            "type": "url",
+            "attr": "btnLink",
+            "label": "Link do Botão"        
+        }
+    ]
+}
