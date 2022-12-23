@@ -1,0 +1,39 @@
+{
+    "slug": "valor",
+    "title": "Valor",
+    "desc": "Imagem, título e descrição",
+    "icon": " bi-balloon-heart",
+    "categ": "luxblock",
+    "parent": ["luxblock/valores"],
+    "attrs": {
+        "image": {
+            "type": "string"
+        },
+        "title": {
+            "type": "string"
+        },
+        "desc": {
+            "type": "string"
+        }
+    },
+    "edit": [
+        {
+            "tag": "input",
+            "type": "image",
+            "attr": "image",
+            "label": "Imagem"        
+        },
+        {
+            "tag": "input",
+            "type": "text",
+            "attr": "title",
+            "label": "Título"        
+        },
+        {
+            "tag": "input",
+            "type": "rich",
+            "attr": "desc",
+            "label": "Descrição"        
+        }
+    ]
+}

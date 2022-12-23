@@ -2,7 +2,7 @@
     "slug": "carousel",
     "title": "Carrossel CTA",
     "desc": "Carrossel de CTAs",
-    "icon": " bi-card-heading",
+    "icon": " bi-code",
     "categ": "luxblock",
     "usesInner": true,  
     "attrs": {

@@ -1,0 +1,30 @@
+{
+    "slug": "nivel",
+    "title": "Nível da Pirâmide",
+    "desc": "Título e descrição",
+    "icon": " bi-triangle",
+    "categ": "luxblock",
+    "parent": ["luxblock/piramide"],
+    "attrs": {
+        "title": {
+            "type": "string"
+        },
+        "desc": {
+            "type": "string"
+        }
+    },
+    "edit": [
+        {
+            "tag": "input",
+            "type": "text",
+            "attr": "title",
+            "label": "Título"        
+        },
+        {
+            "tag": "input",
+            "type": "rich",
+            "attr": "desc",
+            "label": "Descrição"        
+        }
+    ]
+}

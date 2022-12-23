@@ -1,0 +1,64 @@
+{
+    "slug": "heading",
+    "title": "Cabeçalho",
+    "desc": "Título, texto e cor",
+    "icon": " bi-card-heading",
+    "categ": "luxblock",
+    "attrs": {
+        "title": {
+            "type": "string"
+        },
+        "text": {
+            "type": "string"
+        },
+        "color": {
+            "type": "string"
+        }
+    },
+    "edit": [
+        {
+            "tag": "title",
+            "title": "Conteúdo"
+        },
+        {
+            "tag": "input",
+            "type": "text",
+            "attr": "title",
+            "label": "Título"
+        },
+        {
+            "tag": "input",
+            "type": "rich",
+            "attr": "text",
+            "label": "Texto"
+        },
+        {
+            "tag": "title",
+            "title": "Estilos"
+        },
+        {
+            "tag": "input",
+            "type": "select",
+            "attr": "color",
+            "label": "Cor da esfera",
+            "options": [
+                {
+                    "label": "Amarelo",
+                    "value": "yellow"
+                },  
+                {
+                    "label": "Roxo",
+                    "value": "purple"
+                },
+                {
+                    "label": "Rosa",
+                    "value": "pink"
+                },
+                {
+                    "label": "Verde",
+                    "value": "green"
+                }
+            ]
+        }
+    ]
+}

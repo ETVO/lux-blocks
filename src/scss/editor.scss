@@ -85,13 +85,13 @@ hr {
     border-radius: 3px !important;
 }
 
-.accordion .block-editor-rich-text__editable {
-    // margin: 0.5rem 0 !important;
-    background: white;
-    border: solid 1px #ccc !important;
-    border-radius: 3px !important;
-    padding: 6px 8px;
-}
+// .accordion .components-base-control .block-editor-rich-text__editable:not(.wp-block) {
+//     // margin: 0.5rem 0 !important;
+//     background: white;
+//     border: solid 1px #ccc !important;
+//     border-radius: 3px !important;
+//     padding: 6px 8px;
+// }
 
 .block-editor-inner-blocks {
     > .rich-text {

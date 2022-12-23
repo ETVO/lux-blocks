@@ -1,0 +1,115 @@
+@import './nivel/block.scss';
+
+.lux-piramide {
+    padding: 6rem 0;
+    overflow: hidden;
+    background: linear-gradient(#F2E8FF, #fff);
+
+    .container > .title {
+        text-align: center;
+        margin-bottom: 1rem;
+
+        h2 {
+            font-weight: 700;
+            margin-bottom: 0;
+        }
+
+        span.subtitle {
+            font-weight: 600;
+            font-size: calc(1.5rem + 0.9vw);
+        }
+    }
+
+    .wrap {
+        display: flex;
+
+        .image {
+            img {
+                width: 450px;
+                max-width: 100%;
+            }
+        }
+        
+        .niveis {
+            display: flex;
+            flex-flow: column;
+
+            margin-left: -225px;
+            margin-right: 100px;  
+            
+            flex-grow: 1;
+        }
+    }
+
+    .action {
+        text-align: center;
+        margin-top: 1.5rem;
+        font-size: 1.1rem;
+    }
+
+}
+
+
+@media all and (max-width: 992px) {
+    .lux-piramide {
+        .wrap {
+    
+            .image {
+                margin-left: -200px;
+                img {
+                    width: 600px;
+
+                }
+            }
+            
+            .niveis {
+                margin-left: -300px;
+                margin-right: 0;
+            }
+        }
+    }
+}
+
+@media all and (max-width: 576px) {
+    .lux-piramide {
+        .wrap {
+
+    
+            .image {
+                margin-left: -150px;
+                img {
+                    width: 400px;
+
+                }
+            }
+            
+            .niveis {
+                margin-left: -200px;
+                margin-right: 0;
+            }
+        }
+    }
+}
+
+@media all and (max-width: 350px) {
+    .lux-piramide {
+        .wrap {
+            display: block;
+            position: relative;
+
+            .image {
+                left: -50px;
+                position: absolute;
+                height: 100%;
+                img {
+                    width: auto;
+                    height: 100%;
+                }
+            }
+            
+            .niveis {
+                margin-left: 0;
+            }
+        }
+    }
+}

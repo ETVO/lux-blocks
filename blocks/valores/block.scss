@@ -1,0 +1,10 @@
+@import './valor/block.scss';
+
+.lux-valores {
+    padding: 3rem 0 2rem;
+    .container {
+        > .title {
+            margin-bottom: 2.5rem;
+        }
+    }
+}

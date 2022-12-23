@@ -16,8 +16,8 @@ function render_block_cta($attributes)
             <div class="title">
                 <h1><?php echo $title; ?></h1>
             </div>
-            <div class="d-flex">
-                <div class="content">
+            <div class="d-flex flex-column flex-lg-row">
+                <div class="content mb-3 mb-lg-0">
                     <div class="text">
                         <?php echo $text; ?>
                     </div>

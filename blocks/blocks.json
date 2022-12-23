@@ -7,6 +7,27 @@
         },
         {
             "path": "./luximage/"
+        },
+        {
+            "path": "./piramide/"
+        },
+        {
+            "path": "./heading/"
+        },
+        {
+            "path": "./grifado/"
+        },
+        {
+            "path": "./valores/"
+        },
+        {
+            "path": "./luxcontainer/"
+        },
+        {
+            "path": "./servico/"
+        },
+        {
+            "path": "./luxbutton/"
         }
     ]
 }

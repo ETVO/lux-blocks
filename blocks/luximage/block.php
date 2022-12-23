@@ -10,6 +10,7 @@ function render_block_luximage($attributes)
     $showDesktop = $attributes['showDesktop'];
     $showTablet = $attributes['showTablet'];
     $showMobile = $attributes['showMobile'];
+    $classes = $attributes['classes'];
 
     $display_class = 'd-none';
 
@@ -45,27 +46,8 @@ function render_block_luximage($attributes)
     ob_start(); // Start HTML buffering
 ?>
 
-    <div class="lux-luximage <?php echo $display_class; ?>">
-        <div class="container default-lux">
-            <div class="title">
-                <h2 class="fs-1">Planejamento de Marketing</h2>
-                <span class="subtitle caveat">(de verdade!)</span>
-            </div>
-        </div>
-        
-        <div class="wrap">
-            <div class="image">
-                <img src="<?php echo $image; ?>" alt="">
-            </div>
-        </div>
-        
-        <div class="container default-lux">
-            <div class="action">
-                <a href="<?php echo $btnLink; ?>" class="btn-cta format-strong">
-                    <?php echo $btnText; ?>
-                </a>
-            </div>
-        </div>
+    <div class="lux-luximage <?php echo $display_class . ' ' . $classes; ?>">        
+        <img src="<?php echo $image; ?>" alt="">
     </div>
 
 <?php

@@ -1,0 +1,42 @@
+{
+    "slug": "grifado",
+    "title": "Grifado",
+    "desc": "Título e texto",
+    "icon": " bi-chat-right-text-fill",
+    "categ": "luxblock",
+    "attrs": {
+        "title": {
+            "type": "string"
+        },
+        "text": {
+            "type": "string"
+        },
+        "isTitleWide": {
+            "type": "string"
+        }
+    },
+    "edit": [
+        {
+            "tag": "title",
+            "title": "Conteúdo"
+        },
+        {
+            "tag": "input",
+            "type": "text",
+            "attr": "title",
+            "label": "Título"
+        },
+        {
+            "tag": "input",
+            "type": "check",
+            "attr": "isTitleWide",
+            "label": "Título Largura 100%"
+        },
+        {
+            "tag": "input",
+            "type": "rich",
+            "attr": "text",
+            "label": "Texto"
+        }
+    ]
+}

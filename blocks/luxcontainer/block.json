@@ -1,0 +1,19 @@
+{
+    "slug": "luxcontainer",
+    "title": "Container",
+    "desc": "Container para qualquer conteúdo",
+    "icon": " bi-box-seam-fill",
+    "categ": "luxblock",
+    "usesInner": true,  
+    "attrs": {
+        "title": {
+            "type": "string"
+        }
+    },
+    "edit": [
+        {
+            "tag": "input",
+            "type": "inner"
+        }
+    ]
+}

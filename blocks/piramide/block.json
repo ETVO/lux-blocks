@@ -1,10 +1,10 @@
 {
-    "slug": "cta",
-    "title": "CTA",
-    "desc": "Imagem, título, texto e botão",
-    "icon": " bi-flag",
+    "slug": "piramide",
+    "title": "Pirâmide Estratégia",
+    "desc": "Título, subtítulo, níveis, e botão",
+    "icon": " bi-triangle-fill",
     "categ": "luxblock",
-    "parent": ["luxblock/ctacarousel"],
+    "usesInner": true,  
     "attrs": {
         "image": {
             "type": "string"
@@ -12,13 +12,13 @@
         "title": {
             "type": "string"
         },
-        "text": {
-            "type": "string"
-        },
-        "btnText": {
+        "subtitle": {
             "type": "string"
         },
         "btnLink": {
+            "type": "string"
+        },
+        "btnText": {
             "type": "string"
         }
     },
@@ -31,7 +31,7 @@
             "tag": "input",
             "type": "image",
             "attr": "image",
-            "label": "Imagem"        
+            "label": "Imagem da pirâmide"
         },
         {
             "tag": "title",
@@ -41,13 +41,13 @@
             "tag": "input",
             "type": "text",
             "attr": "title",
-            "label": "Título"        
+            "label": "Título"
         },
         {
             "tag": "input",
-            "type": "rich",
-            "attr": "text",
-            "label": "Texto"        
+            "type": "text",
+            "attr": "subtitle",
+            "label": "Subtítulo"
         },
         {
             "tag": "title",
@@ -55,15 +55,35 @@
         },
         {
             "tag": "input",
-            "type": "text",
+            "type": "rich",
             "attr": "btnText",
-            "label": "Texto do Botão"        
+            "label": "Texto do botão"
         },
         {
             "tag": "input",
             "type": "url",
             "attr": "btnLink",
-            "label": "Link do Botão"        
+            "label": "Link do botão"
+        },
+        {
+            "tag": "title",
+            "title": "Níveis"        
+        },
+        {
+            "tag": "input",
+            "type": "template",
+            "blocks": [ "luxblock/nivel" ],
+            "template": [
+                [ "luxblock/nivel" ],
+                [ "luxblock/nivel" ],
+                [ "luxblock/nivel" ]
+            ],
+            "templateLock": "all"
+        }
+    ],
+    "children": [
+        {
+            "path": "nivel/"
         }
     ]
 }

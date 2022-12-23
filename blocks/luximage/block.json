@@ -6,15 +6,18 @@
     "categ": "luxblock",
     "attrs": {
         "image": {
-            "type": "boolean"
+            "type": "string"
         },
         "showDesktop": {
-            "type": "string"
+            "type": "boolean"
         },
         "showTablet": {
-            "type": "string"
+            "type": "boolean"
         },
         "showMobile": {
+            "type": "boolean"
+        },
+        "classes": {
             "type": "string"
         },
         "title": {
@@ -43,22 +46,6 @@
         },
         {
             "tag": "title",
-            "title": "Botão"        
-        },
-        {
-            "tag": "input",
-            "type": "rich",
-            "attr": "btnText",
-            "label": "Texto do botão"
-        },
-        {
-            "tag": "input",
-            "type": "url",
-            "attr": "btnLink",
-            "label": "Link do botão"
-        },
-        {
-            "tag": "title",
             "title": "Opções"        
         },
         {
@@ -79,6 +66,12 @@
             "type": "check",
             "attr": "showMobile",
             "label": "Exibir no Mobile"
+        },
+        {
+            "tag": "input",
+            "type": "text",
+            "attr": "classes",
+            "label": "Classes CSS"
         }
     ]
 }

@@ -1,0 +1,36 @@
+.lux-servico {
+    padding-bottom: 2rem;
+
+    .container {
+        .title {
+            display: flex;
+            margin-bottom: 1rem;
+
+            .icon {
+                width: 70px;
+                margin: auto 0;
+                margin-left: calc(-70px - 1.25rem);
+                margin-right: 1.25rem;
+            }
+
+            h2 {
+                margin: auto 0;
+            }
+        }
+
+        .content {
+            ul {
+                font-size: .9rem;
+            }
+        }
+    }
+}
+
+@media all and (max-width: 576px) {
+    .lux-servico {
+        .container .title .icon {
+            margin-left: calc(-70px - .625rem);
+            margin-right: .625rem;
+        }
+    }
+}

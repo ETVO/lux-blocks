@@ -1,0 +1,38 @@
+{
+    "slug": "luxbutton",
+    "title": "Botão Lux",
+    "desc": "Texto e Link",
+    "icon": " bi-arrow-right-square-fill",
+    "categ": "luxblock",
+    "attrs": {
+        "title": {
+            "type": "string"
+        },
+        "text": {
+            "type": "string"
+        },
+        "link": {
+            "type": "string"
+        }
+    },
+    "edit": [
+        {
+            "tag": "input",
+            "type": "text",
+            "attr": "title",
+            "label": "Título"
+        },
+        {
+            "tag": "input",
+            "type": "rich",
+            "attr": "text",
+            "label": "Texto"
+        },
+        {
+            "tag": "input",
+            "type": "url",
+            "attr": "link",
+            "label": "Link"
+        }
+    ]
+}

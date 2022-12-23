@@ -1,0 +1,39 @@
+{
+    "slug": "valores",
+    "title": "Nossos Valores",
+    "desc": "Título e valores",
+    "icon": " bi-balloon-heart-fill",
+    "categ": "luxblock",
+    "usesInner": true,  
+    "attrs": {
+        "title": {
+            "type": "string"
+        }
+    },
+    "edit": [
+        {
+            "tag": "title",
+            "title": "Conteúdo"        
+        },
+        {
+            "tag": "input",
+            "type": "text",
+            "attr": "title",
+            "label": "Título"
+        },
+        {
+            "tag": "title",
+            "title": "Valores"        
+        },
+        {
+            "tag": "input",
+            "type": "inner",
+            "blocks": [ "luxblock/valor" ]
+        }
+    ],
+    "children": [
+        {
+            "path": "valor/"
+        }
+    ]
+}
