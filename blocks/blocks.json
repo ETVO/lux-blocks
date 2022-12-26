@@ -28,6 +28,9 @@
         },
         {
             "path": "./luxbutton/"
+        },
+        {
+            "path": "./etapas/"
         }
     ]
 }

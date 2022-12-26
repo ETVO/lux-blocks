@@ -1,0 +1,36 @@
+{
+    "slug": "etapa",
+    "title": "Etapa",
+    "desc": "Ícone, título e conteúdo",
+    "icon": " bi-circle",
+    "categ": "luxblock",
+    "parent": ["luxblock/etapas"],
+    "usesInner": true,
+    "attrs": {
+        "icon": {
+            "type": "string"
+        },
+        "title": {
+            "type": "string"
+        }
+    },
+    "edit": [
+        {
+            "tag": "input",
+            "type": "image",
+            "attr": "icon",
+            "label": "Ícone"        
+        },
+        {
+            "tag": "input",
+            "type": "text",
+            "attr": "title",
+            "label": "Título"        
+        },
+        {
+            "tag": "input",
+            "type": "inner",
+            "label": "Conteúdo"        
+        }
+    ]
+}

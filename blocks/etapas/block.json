@@ -1,0 +1,29 @@
+{
+    "slug": "etapas",
+    "title": "Etapas Estratégia",
+    "desc": "Imagem",
+    "icon": " bi-circle-fill",
+    "categ": "luxblock",
+    "usesInner": true,
+    "attrs": {
+        "image": {
+            "type": "string"
+        }
+    },
+    "edit": [
+        {
+            "tag": "title",
+            "title": "Etapas"        
+        },
+        {
+            "tag": "input",
+            "type": "inner",
+            "blocks": [ "luxblock/etapa" ]
+        }
+    ],
+    "children": [
+        {
+            "path": "etapa/"
+        }
+    ]
+}
