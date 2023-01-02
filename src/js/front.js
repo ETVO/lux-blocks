@@ -5,6 +5,8 @@
  * @author Estevão Rolim <ETVO@github.com>
  */
 
+import './etapas';
+
  (jQuery)(
     function($) {
 
@@ -97,6 +99,7 @@
                     $(this).append(indicators);
             })
         }
+
 
         function toggleCarouselInner() {
             $(window).on('load resize', function() {

@@ -11,12 +11,14 @@
                 font-size: calc(1.5rem + 1.25vw);
             }
             .text {
+                max-width: 600px;
                 font-size: 1.1rem;
             }
 
         }
 
         .spheres {
+            min-width: 150px;
             left: 75px;
         }
     }

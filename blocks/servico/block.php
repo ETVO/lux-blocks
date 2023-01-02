@@ -12,7 +12,7 @@ function render_block_servico($attributes, $content)
         <div class="container default-lux">
             <div class="title">
                 <img class="icon" src="<?php echo PLUGIN_IMG_URL . '/lux-pink.svg'; ?>">
-                <h2 class="fs-1"><?php echo $title; ?></h2>  
+                <h2><?php echo $title; ?></h2>  
             </div>
             <div class="content">
                 <?php echo $content; ?>

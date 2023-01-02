@@ -8,7 +8,7 @@ function render_block_etapa($attributes, $content)
     ob_start(); // Start HTML buffering
 ?>
 
-    <div class="lux-etapa">
+    <div class="lux-etapa etapa-item">
         <div class="etapa-heading">
             <div class="icon">
                 <img src="<?php echo $icon; ?>">

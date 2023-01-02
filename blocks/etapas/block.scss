@@ -1,4 +1,4 @@
-@import './etapa/block.scss';
+@import "./etapa/block.scss";
 
 .lux-etapas {
     overflow: hidden;
@@ -10,7 +10,7 @@
     }
 
     &::after {
-        content: '';
+        content: "";
         position: absolute;
 
         width: 25%;
@@ -18,33 +18,88 @@
         right: 0;
         top: 0;
 
-        background: linear-gradient(90deg, rgba(#fff, 0), #fff);
+        z-index: 1;
+
+        background: linear-gradient(90deg, rgba(#fff, 0), rgba(#666, .1));
+        // background-color: rgba(#666, .1);
     }
 
-    .control-prev,
-    .control-next {
-        display: inline-flex;
-        
-        margin-right: .5rem;
-        font-size: 1.1rem;
+    .etapas {
+        display: flex;
 
-        height: 30px;
-        width: 30px;
-        
-        background-color: #eee;
-        border: solid 1px #bbb;
-        border-radius: 50%;
-        color: #494949;
+    }
+    
+    .etapas-footer {
+        position: relative;
+        z-index: 2;
 
-        &::before { 
-            margin: auto;
+        .etapas-control-prev,
+        .etapas-control-next {
+            position: relative;
+            display: inline-flex;
+            justify-content: center;
+    
+            width: 30px;
+            height: 30px;
+            background: #d9d9d9;
+            border: none;
+
+            opacity: .7;
+            transition: opacity .2s;
+    
+            border-radius: 50%;
+    
+            .control-next-icon,
+            .control-prev-icon {
+                display: flex;
+
+                margin: auto;
+    
+                width: unset;
+                height: unset;
+    
+                font-size: 1.1rem;
+    
+                color: #494949 !important;
+                font-family: bootstrap-icons;
+                font-weight: bolder;
+    
+                background-image: none;
+    
+            }
+    
+            &:hover,
+            &:focus,
+            &:active {
+                opacity: 1;
+            }
+    
+            .control-prev-icon::before {
+                content: "\f284";
+            }
+    
+            .control-next-icon::before {
+                content: "\f285";
+            }
+
+            &[disabled] {
+                opacity: .25;
+            }
+        }
+
+        .info {
+            color: #ccc;
+            font-style: italic;
+            font-size: .85rem;
+            font-weight: 300;
         }
     }
+
 }
 
 @media all and (max-width: 360px) {
     .lux-etapas {
-        margin-right: -1.5rem;
+        margin-right: -1.25rem;
         &::after {
             width: 10%;
         }

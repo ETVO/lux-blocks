@@ -1,6 +1,7 @@
 .lux-etapa {
     min-width: 40%;
-    max-width: 100%;
+    width: 40%;
+    // display: block;
 
     .etapa-heading {
         margin-bottom: .5rem;
@@ -40,12 +41,14 @@
         .etapa-title {
             font-size: 1.1rem;
             font-weight: 600;
+            padding: 0 .25rem;
         }
     }
 
     .etapa-content {
         font-size: .85rem;
         line-height: 1.5;
+        padding: .25rem;
     }
 }
 
