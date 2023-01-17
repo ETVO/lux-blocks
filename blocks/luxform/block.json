@@ -1,0 +1,47 @@
+{
+    "slug": "luxform",
+    "title": "Formulário",
+    "desc": "Container para formulário e conteúdo",
+    "icon": " bi-box-seam-fill",
+    "categ": "luxblock",
+    "usesInner": true,  
+    "attrs": {
+        "title": {
+            "type": "string"
+        },
+        "subtitle": {
+            "type": "string"
+        },
+        "form": {
+            "type": "string"
+        }
+    },
+    "edit": [
+        {
+            "tag": "input",
+            "type": "text",
+            "attr": "title",
+            "label": "Título"
+        },
+        {
+            "tag": "input",
+            "type": "text",
+            "attr": "subtitle",
+            "label": "Subtítulo"
+        },
+        {
+            "tag": "input",
+            "type": "text",
+            "attr": "form",
+            "label": "Shortcode Formulário"
+        },
+        {
+            "tag": "title",
+            "title": "Conteúdo"
+        },
+        {
+            "tag": "input",
+            "type": "inner"
+        }
+    ]
+}

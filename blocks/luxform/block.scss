@@ -1,0 +1,25 @@
+.lux-luxform {
+    padding: 3rem 0;
+
+    .col.form {
+        [type="submit"] {
+            float: right;
+        }
+    }
+
+    .col.content {
+        text-align: right;
+    }
+}
+
+@media all and (max-width: 576px) {
+
+    .lux-luxform {
+        .col.form {
+            [type="submit"] {
+                display: block;
+                width: 100%;
+            }
+        }
+    }
+}

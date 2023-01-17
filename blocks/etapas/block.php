@@ -25,7 +25,7 @@ function render_block_etapas($attributes, $content)
                     <span class="visually-hidden"><?php echo __('Próximo'); ?></span>
                 </button>
             </div>
-            <div class="info">
+            <div class="info d-none d-sm-block">
                 <span class="bi-info-circle me-1"></span> utilize as setas para navegar
             </div>
         </div>
